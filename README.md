@@ -29,5 +29,5 @@ We assessed a variety of tweet features.  The data set was aggregated to generat
 
 We used regular expressions to determine if a tweet mentioned any one of the three major parties (Liberal, Conservatives, NDP). A tweet was classified as Liberal if it included any of the following terms: “lpc”,” lib”, “libs”, “liberal”, “liberals”, “trudeau” or “grits”.  A tweet was classified as Conservative if it included: “cpc”, “cons”, “conservative”, “conservatives”, “harper” or “tories”.  Finally, a tweet was classified as NDP if it included:  “ndp”, “democrat”, “democrats” or “mulcair”.  
 
-![](C:\Users\VT\Desktop\Report\fig2.jpg)
+![](https://github.com/VIVTA/CS4437/blob/master/fig2.jpg)
 
