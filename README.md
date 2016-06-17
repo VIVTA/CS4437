@@ -5,8 +5,6 @@
 ###Abstract
 Twitter can be mined to understand and predict public opinion.  We analyzed 48,717 tweets from October 12th to October 18th, leading up to the 2015 Canadian federal election. A total of 52 aggregated tweet features (including tweet, retweet, user, hashtag, link and sentiment counts/proportions) were compared to results from public opinion polls as well as final election results and selected using LASSO regression. This study aims to: (1) establish which features overall best predict voting share per party; (2) determine which methods used to compute sentiment twitter features best predict voting shares and (3) ascertain if the best predictors vary depending on the type of poll used as the outcome.  
 
-<br>
-
 ###Introduction
 The 42nd Canadian federal election was held on October 19th, 2015.  With one of the longest campaigns in Canadian history, the election encouraged voters from across the country to engage in open discussions on national issues.  
 
@@ -17,11 +15,6 @@ A generalizable method to forecast election results using Twitter has yet to be 
 There has also been variability on the type of polls that are used as baseline. Since the type of polling method can influence performance, the choice of poll used in the regression could impact its predictions.  We will determine which Twitter features best predict election outcomes and whether this selection is affected by the polling method used for the dependent variable.  
 
 To our knowledge, no previous studies have looked at election predictions using Twitter in Canada.  As a result, this paper builds on existing literature by extending twitter prediction methods to the Canadian context.  
-
-<br>
-<br>
-<br>
-<br>
   
 ###Methods
 ####Data
@@ -30,8 +23,6 @@ We examined a total of 48,717 tweets that were posted between October 12th, 2015
 Pre-processing of tweets included converting all tweets into lowercase, removing duplicates and excluding tweets that were not in the English language.  
 
 We used the daily poll results from EKOS that poll by interactive voice response (http://www.ekospolitics.com), Nanos Research that poll by telephone (http://www.nanosresearch.com) and Eric Grenier's Poll Tracker that uses weighted poll averages when training our model (Canadian Broadcasting Corporation, 2015).  
-  
-<br>
 
 ####Features
 We assessed a variety of tweet features.  The data set was aggregated to generate twitter features which include tweet counts/proportions, retweet counts/proportions, twitter user counts/proportions, hashtags counts/proportions, link counts/proportions for each party and for each day.  
@@ -74,20 +65,11 @@ Valence Aware Dictionary for Sentiment Reasoning (VADER) is a rule-based sentime
 
 In addition, we also used the built-in sentiment analysis classifier in Mathematica, a symbolic mathematical computation program which returns "positive", "neutral" or "negative" sentiment for each string of text.  
 
-<br>
-
 ####Analysis
 To select for the best predictors out of all the twitter features, we used a lasso (Least Absolute Shrinkage and Selection Operator) regression algorithm in MATLAB.  It imposes a constraint on the coefficient, where the coefficients of non-relevant variables will be set to zero (Tibshirani, 1994).  We used the model with the smallest value of lambda.  Correlation between the Twitter features and the poll results also was calculated.  This will repeated using each type of poll as the dependent variable.  The performance of the model will be assessed by mean squared error (James, Witten, Hastie, Tibshirani, 2013).  
 
-<br>
-
 ###Results
 From October 12th to October 18th, there were 15,875 twitter users who tweeted 48,717 unique tweets with hashtags (#canpoli, #cdnpoli, #elxn2015, #elxn42, cpc, #lpc, #ndp) regarding the 2015 Canadian Federal Election.  
-
-<br>
-<br>
-<br>
-<br>
 
 **Figure 1. Retweet (pink) and unique tweet (purple) counts for tweets mentioning the Liberals, Conservatives or NDP from October 12th to October 18th 2015**
 
@@ -103,12 +85,6 @@ Coefficients and correlation from the lasso regression model are listed in Suppl
 
 The relevant features included in the lasso model differed depending on the type of poll that was used as the dependent variable as visualized in the alluvial digram in Figure 3 and circular dendrogram in Supplementary Figure 2.
 
-<br>
-<br>
-<br>
-<br>
-<br>
-
 **Figure 2. Sentiment tweet counts for tweets mentioning the Liberals, Conservatives and NDP from October 12th to October 18th 2015 using Mathematica (M), Opinion Lexicon (H), AFINN (A) and VADER (V)**
 
 Party                       | Sentiment
@@ -117,14 +93,9 @@ Party                       | Sentiment
 **Conservative**            | ![](https://github.com/VIVTA/CS4437/blob/master/3b.jpg)
 **New Democratic**          | ![](https://github.com/VIVTA/CS4437/blob/master/3c.jpg)
 
-<br>
-<br>
-
 **Figure 3. Flow of the significant twitter features in the Poll Tracker, NANOS and EKOS LASSO models**
 
 <img src="https://github.com/VIVTA/CS4437/blob/master/flow.png" height="600px" width="500px" />  
-
-<br>
 
 **Figure 4. Parallel coordinates demonstrating the change in coefficents of twitter features for Poll Tracker, NANOS and EKOS LASSO models**
 
@@ -149,23 +120,6 @@ Another, limitation to our data is that the Twitter demographic is a non-random 
 Tsakalidis et al. collected data for more than six weeks and found that longer training window sizes tend to have lower mean absolute error.  Although, we only collected and trained data over a one week period before the election, many studies in the past have also used one week of data [Metaxas, Mustafarj, and Gayo-Avello, 2011; Tjong Kim Sang and Bos, 2012; Ceron, Curini, Iascus, and Porro, 2013].  
 
 These results can guide future applications in election prediction using twitter in Canada.  
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 ###References
 
@@ -196,13 +150,6 @@ Sysomos. (2009). An In-Depth Look Inside the Twitter World. Retrieved from http:
 Tao, S. & Reis-Smart, H. (2014). The Key Cause of Polling Quality Deterioration. Retrieved from Marketing Research Association: http://www.marketingresearch.org /article/key-cause-polling-quality-deterioration
 
 Tibshirani, R. (1996). Regression shrinkage and selection via the lasso. Journal of the Royal Statistical Society, 58(1), 267-288.  
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 ###Appendix
 
@@ -271,9 +218,6 @@ Polarity Score Sum (VADER)	  |0.0265	     |0.0207 |-0.0066	|-0.0496
 
 **Supplementary Figure 3. Wordclouds for #LPC. #CPC and #NDP**
 ![](https://github.com/VIVTA/CS4437/blob/master/wordcloud.jpg)
-
-***
-'  
 
 **Supplementary Figure 4. Collage of twitter profile pictures of users who tweeted regarding the election from October 12th to October 18th 2015**
 
