@@ -91,7 +91,7 @@ From October 12th to October 18th, there were 15,875 twitter users who tweeted 4
 
 **Figure 1. Retweet (pink) and unique tweet (purple) counts for tweets mentioning the Liberals, Conservatives or NDP from October 12th to October 18th 2015**
 
-![](C:\Users\VT\Desktop\Report\fig2.jpg)
+![](https://github.com/VIVTA/CS4437/blob/master/fig2.jpg)
 
 Figure 1 shows the total number of tweets, retweets and unique tweets for each party posted from October 12th to October 18th.  The majority of tweets are retweets (in pink) rather than new tweets (purple), with 65% of all tweets in the dataset retweets.  The figure also shows across all 7 days, there were more tweets mentioning the conservative party followed by the liberal party with the least amount of tweets mentioning the NDP.  It is intresting to note that there is a decline in the number of tweets across all three parties on the last day (October 18th) before the election.  This occurence may be related to a new hashtag (#CanadaVotes) not available in our dataset, that was promoted during the CBC election show aired that day.  
 
@@ -113,22 +113,22 @@ The relevant features included in the lasso model differed depending on the type
 
 Party                       | Sentiment
 ----------------------------|------------------     
-**Liberal**                 | ![](C:\Users\VT\Desktop\Report\3a.jpg)
-**Conservative**            | ![](C:\Users\VT\Desktop\Report\3b.jpg)
-**New Democratic**          | ![](C:\Users\VT\Desktop\Report\3c.jpg)
+**Liberal**                 | ![](https://github.com/VIVTA/CS4437/blob/master/3a.jpg)
+**Conservative**            | ![](https://github.com/VIVTA/CS4437/blob/master/3b.jpg)
+**New Democratic**          | ![](https://github.com/VIVTA/CS4437/blob/master/3c.jpg)
 
 <br>
 <br>
 
 **Figure 3. Flow of the significant twitter features in the Poll Tracker, NANOS and EKOS LASSO models**
 
-<img src="C:\Users\VT\Desktop\Report\flow.png" height="600px" width="500px" />  
+<img src="https://github.com/VIVTA/CS4437/blob/master/flow.png" height="600px" width="500px" />  
 
 <br>
 
 **Figure 4. Parallel coordinates demonstrating the change in coefficents of twitter features for Poll Tracker, NANOS and EKOS LASSO models**
 
-<img src="C:\Users\VT\Desktop\Report\parallel.png" height="600px" width="500px" />
+<img src="https://github.com/VIVTA/CS4437/blob/master/parallel.png" height="600px" width="500px" />
 
 Unique twitter proportion, hashtag count, link proportion, positive proportion (Mathematica), positive proportion (VADER), positive share (Hu), positive share (Mathematica), neutral count (Hu), neutral proportion (VADER), neutral share (AFINN), negative count (AFINN), negative proportion (Hu), negative proportion (Mathematica), negative share (Hu), Negative Share (Mathematica), polarity score average (AFINN) and polarity score sum (VADER) were included in all three lasso regression model.  
 
@@ -264,19 +264,19 @@ Polarity Score Sum (AFINN)	  |0	         |0	     |0	      |-0.0253
 Polarity Score Sum (VADER)	  |0.0265	     |0.0207 |-0.0066	|-0.0496
 
 **Supplmentary Figure 1. Number of unique twitter users tweeting about the Liberals, Conservative and NDP**  
-![](C:\Users\VT\Desktop\Report\venn.jpg)
+![](https://github.com/VIVTA/CS4437/blob/master/venn.jpg)
 
 **Supplmentary Figure 2. Relationship between relevant twitter features and Poll Tracker, NANOS and EKOS Lasso models**  
-![](C:\Users\VT\Desktop\Report\twitfeet.png)
+![](https://github.com/VIVTA/CS4437/blob/master/twitfeet.png)
 
 **Supplementary Figure 3. Wordclouds for #LPC. #CPC and #NDP**
-![](C:\Users\VT\Desktop\Report\wordcloud.jpg)
+![](https://github.com/VIVTA/CS4437/blob/master/wordcloud.jpg)
 
 ***
 '  
 
 **Supplementary Figure 4. Collage of twitter profile pictures of users who tweeted regarding the election from October 12th to October 18th 2015**
 
-![](C:\Users\VT\Desktop\Report\collage.jpg)
+![](https://github.com/VIVTA/CS4437/blob/master/collage.jpg)
 
 
